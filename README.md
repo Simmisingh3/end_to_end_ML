@@ -8,3 +8,7 @@ git init
 ---
 git add .
 ---
+
+---
+git commit -m "This is my First commit"
+---
