@@ -9,7 +9,11 @@ git init
 ```
 git add .
 ```
+### To pull your file from github 
 
+```
+git pull
+```
 
 ```
 git commit -m "This is my First commit"
