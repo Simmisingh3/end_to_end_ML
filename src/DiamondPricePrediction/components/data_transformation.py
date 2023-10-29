@@ -4,15 +4,15 @@ import pandas as pd
 import numpy as np
 
 from dataclasses import dataclass
-from src.DimondPricePrediction.exception import customexception
-from src.DimondPricePrediction.logger import logging
+from src.DiamondPricePrediction.exception import customexception
+from src.DiamondPricePrediction.logger import logging
 
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OrdinalEncoder,StandardScaler
 
-from src.DimondPricePrediction.utils.utils import save_object
+from src.DiamondPricePrediction.utils.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
@@ -96,6 +96,9 @@ class DataTransformation:
             target_feature_train_df=train_df[target_column_name]
             
             
+            input_feature_test_df=test_df.drop(columns=drop_columns,axis=1)
+            target_feature_test_df=test_df[target_column_name]
+            
             input_feature_train_arr=preprocessing_obj.fit_transform(input_feature_train_df)
             
             input_feature_test_arr=preprocessing_obj.transform(input_feature_test_df)
@@ -121,4 +124,3 @@ class DataTransformation:
             logging.info("Exception occured in the initiate_datatransformation")
 
             raise customexception(e,sys)
-            
