@@ -15,10 +15,17 @@ git add .
 git pull
 ```
 
+## To push your file
+
+```
+git push
+```
+## Commit Comment
 ```
 git commit -m "This is my First commit"
 ```
 
+# To run init_set.sh file on git bash
 ```
 bash your_file_name.sh
 ```
