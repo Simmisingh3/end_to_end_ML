@@ -2,7 +2,7 @@ pandas
 numpy
 scikit-learn
 ipykernel
--e . # to install your local package that is DiamondPricePrediction
+-e . 
 seaborn
 datetime
 Pathlib
