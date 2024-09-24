@@ -1,11 +1,11 @@
-## This is my End to End file.
+## This is my End to End Project.
 
-### First initialise the git.
+### First initialise the git(Source Code Management) on the git bash of the terminal.
 
 ```
 git init
 ```
-
+## Adding files before commit
 ```
 git add .
 ```
