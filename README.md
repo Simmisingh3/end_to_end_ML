@@ -5,7 +5,7 @@
 ```
 git init
 ```
-## Adding files before commit
+## Adding files before commit, then write commit comment
 ```
 git add .
 ```
